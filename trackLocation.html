@@ -11,7 +11,8 @@ function trackLocation(){
 	}
 }
 function showPosition(position){
-	document.getElementById('showLocation').innerHTML="Latitude:"+position.coords.latitude + "<br>Longitude:" + position.coords.longitude;
+	document.getElementById('showLocation').innerHTML="Latitude:"+position.coords.latitude+
+	"<br>Longitude:" + position.coords.longitude;
 }
 </script>
 </head>
@@ -20,4 +21,3 @@ function showPosition(position){
 <div id='showLocation'>Location will be displayed here</div>
 <button id='trackLocation' onclick='trackLocation()'>Click Me to Get Your Location</button>
 </body>
-</html>
